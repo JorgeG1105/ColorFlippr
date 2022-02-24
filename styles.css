@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    /* outline: 1px solid red; */
+}
+
+.active {
+    border-bottom: solid 2px #72A7BF;
+}
+
+/*------Fonts------*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&family=Open+Sans:wght@300;500&display=swap');
+
+/*------------------Nav-----------------------------------*/
+h1 {
+    color: #72A7BF;
+    flex-grow: 2;
+    font-weight: 500;
+    margin: 10px 0 10px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    -moz-box-shadow: -5px -5px 5px 5px #888;
+    -webkit-box-shadow: -5px -5px 5px 5px#888;
+    box-shadow: -5px -5px 10px 5px #888;
+    background-color: white;
+}
+
+.nav-item {
+    margin: 5px;
+}
+
+.nav-item a {
+    color: #1A1A1A;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.flipprMode {
+    padding: 10px;
+    display: flex;
+    flex-grow: 1;
+}
+
+
+.love {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12px;
+    flex-grow: 1;
+    padding: 10px;
+    text-align: right;
+}
+
+/*---------------Main Container Styles--------------------*/
+.mainContainer {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.colorH2{
+   color:white;
+   background-color:#1A1A1A;
+   padding: 20px;
+   border-radius: 10px;
+   margin: 10px;
+   font-weight: 500;
+}
+
+.btn {
+    color: white;
+    background-color: #1A1A1A;
+    border:none;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hexColor {
+    color: #72A7BF;
+}
+
+
+/*--------------------------------------------MEDIA QUERIES---------------------------------*/
+
+/*------Smart phone Styles -------*/
+
+@media screen and (min-width: 390px){
+    h1 {
+        font-size: 8vw;
+    }
+
+    .flipprMode {
+        font-size: 8vw;
+    }
+
+    .love {
+        display: none;
+    }
+
+    .colorH2 {
+        font-size: 38px;
+    }
+
+    .hexColor{
+        display: block;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .btn {
+        font-size: 25px;
+    }
+}
+
+/*------Tablet Styles----------*/
+@media screen and (min-width: 820px){
+    h1 {
+        font-size: 40px;
+    }
+
+    .flipprMode {
+        font-size: 30px;
+    }
+
+    .love {
+        font-size: 18px;
+        display: block;
+    }
+
+    .colorH2 {
+        font-size: 39px;
+    }
+
+    .btn {
+        font-size: 34px;
+    }
+
+    .hexColor {
+        display: initial;
+    }
+}
+
+/*-----Desktop----*/
+/* Implementing mobile and tablet sizes after desktop has been established is very tricky. Need to work on this*/
+
+@media screen and (min-width: 1100px){
+    body {
+        max-width: 100%;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    .flipprMode {
+        font-size: 24px;
+    }
+
+    .love {
+        font-size: 12px;
+    }
+
+    .colorH2 {
+        font-size: 30px;
+    }
+
+    .btn {
+        font-size: 24px;
+    }
+}
+
+
+
